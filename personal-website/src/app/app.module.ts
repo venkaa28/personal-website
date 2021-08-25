@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import {environment} from "../environments/environment";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { ContactMeComponent } from './pages/contact-me/contact-me.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
